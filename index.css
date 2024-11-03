@@ -1,8 +1,80 @@
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 body {
-    margin: 0;
+  margin: 0;
+  background: #1b244a;
+  font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+h1 {
+  color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  font-family: 'Cursed Timer ULiL', sans-serif;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 2px solid whitesmoke;
+  padding: 1rem;
+  border-radius: 8px;
+  color: whitesmoke;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button:active {
+  animation: pop 0.2s forwards;
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.container-displays {
+  display: flex;
+  justify-content: space-around;
+}
+
+.display-wrapper {
+  text-align: center;
+}
+
+.display {
+  background-color: black;
+  color: lightcoral;
+  height: 140px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.display span {
+  font-size: 90px;
+}
+
+button.new-game {
+    margin-top: 3rem;
+    font-size: 32px;
 }

@@ -1,16 +1,29 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-            </div>
-            <div>
-                <h3>GUEST</h3>
-            </div>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-displays">
+        <div class="display-wrapper">
+          <h1>HOME</h1>
+          <div class="display home"><span></span></div>
+          <button class="add-1-home">+1</button>
+          <button class="add-2-home">+2</button>
+          <button class="add-3-home">+3</button>
         </div>
-        <script src="index.js"></script>
-    </body>
+
+        <div class="display-wrapper">
+          <h1>GUEST</h1>
+          <div class="display guest"><span></span></div>
+          <button class="add-1-guest">+1</button>
+          <button class="add-2-guest">+2</button>
+          <button class="add-3-guest">+3</button>
+        </div>
+      </div>
+
+      <button class="new-game">New Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
